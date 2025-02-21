@@ -42,7 +42,7 @@ let server = createServer(async (req, res) => {
     
     if (req.method === 'GET') {
         if (req.url === '/') {
-            return ServerFile(res,path.join('public', 'link.html'),'text/html')
+            return ServerFile(res,path.join('public', 'index.html'),'text/html')
         } 
 
         else  if (req.url === '/link.css') {
